@@ -15,27 +15,11 @@ if (userCheck.length) {
     await connection.dropCollection('users');
 }
 
-
-
 // Create empty array to hold users
 const users = [];
 
 // Loop 15 times to add users to array
-for (let i = 0; i < 15; i++) {
-const thoughts = getRandomThoughts(15);
+for (let i = 0; i < 4; i++) {
+const thoughts = getRandomThoughts(4);
 }
 });
-
-
-// var arr = [
-//     {
-//         color: "red",
-//         size: "10.5"
-//     }
-// ]
-
-// const Shoes = require("shoesModel.js")
-
-// function seeds(){
-//     Shoes.Create(arr)
-// }

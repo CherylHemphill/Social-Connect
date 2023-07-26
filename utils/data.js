@@ -1,34 +1,95 @@
-const names = [
-'Oliver',
-'Ava',
-'Ethan',
-'Mia',
-'Noah',
-'Isabella',
-'Liam',
-'Sophia',
-'Aiden',
-'Harper',
-'Lucas',
-'Amelia',
-'Benjamin',
-'Evelyn',
-'Elijah',
-'Abigail',
-'Alexander',
-'Emily',
-'James',
-'Charlotte',
-'William',
-'Scarlett',
-'Michael',
-'Grace',
-'Samuel',
-'Chloe',
-'Jackson',
-'Zoey',
-'Daniel',
-'Lily',
+const users = [
+    {   "user": "Oliver",
+        "email": "Oliver@example.com"    
+    },
+    {
+        "user": "Ava",
+        "email": "Ava@example.com"   
+    },
+    {
+        "user": "Ethan",
+        "email": "Ethan@example.com"   
+    },
+    {
+        "user": "Mia",
+        "email": "Mia@example.com"   
+    },
+    {
+        "user": "Noah",
+        "email": "Noah@example.com"   
+    },
+    {
+        "user": "Isabella",
+        "email": "Isabella@example.com"   
+    },
+    {
+        "user": "Liam",
+        "email": "Liam@example.com"   
+    },
+    {
+        "user": "Sophia",
+        "email": "Sophia@example.com"   
+    },
+    {
+        "user": "Aiden",
+        "email": "Aiden@example.com"   
+    },
+    {
+        "user": "Harper",
+        "email": "Harper@example.com"   
+    },
+    {
+        "user": "Lucas",
+        "email": "Lucas@example.com"   
+    },
+    {
+        "user": "Amelia",
+        "email": "Amelia@example.com"   
+    },
+    {
+        "user": "Evelyn",
+        "email": "Evelyn@example.com"   
+    },
+    {
+        "user": "Elijah",
+        "email": "Elijah@example.com"   
+    },
+    {
+        "user": "Abigail",
+        "email": "Abigail@example.com"   
+    },
+    {
+        "user": "Emily",
+        "email": "Emily@example.com"   
+    },
+    {
+        "user": "James",
+        "email": "James@example.com"   
+    },
+    {
+        "user": "Grace",
+        "email": "Grace@example.com"   
+    },
+    {
+        "user": "Samuel",
+        "email": "Sam@example.com"   
+    },
+    {
+        "user": "Chloe",
+        "email": "Chloe@example.com"   
+    },
+    {
+        "user": "Zoey",
+        "email": "Zoey@example.com"   
+    },
+    {
+        "user": "Daniel",
+        "email": "Daniel@example.com"   
+    },
+    {
+        "user": "Lily",
+        "email": "Lily@example.com"   
+    },
 ];
 
 
@@ -85,32 +146,3 @@ const getRandomThoughts = () => {
 };
 
 module.exports = { getRandomuser, getRandomThoughts };
-
-//   const emails = [
-//     'oliver@example.com',  
-//     'ava@example.com',  
-//     'ethan@example.com',  
-//     'mia@example.com',  
-//     'noah@example.com',  
-//     'isabella@example.com',  
-//     'liam@example.com',  
-//     'sophia@example.com',  
-//     'aiden@example.com',  
-//     'harper@example.com',  
-//     'lucas@example.com',  
-//     'amelia@example.com',  
-//     'benjamin@example.com', 
-//     'evelyn@example.com',  
-//     'elijah@example.com',  
-//     'abigail@example.com',  'alexander@example.com',  
-//     'emily@example.com',  
-//     'james@example.com',  
-//     'charlotte@example.com',  'william@example.com',  'scarlett@example.com',  'michael@example.com',  
-//     'grace@example.com',  
-//     'samuel@example.com',  
-//     'chloe@example.com',  
-//     'jackson@example.com',  
-//     'zoey@example.com',  
-//     'daniel@example.com',  
-//     'lily@example.com'
-// ];

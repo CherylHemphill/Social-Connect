@@ -1,97 +1,20 @@
-const users = [
-    {   "user": "Oliver",
-        "email": "Oliver@example.com"    
-    },
-    {
-        "user": "Ava",
-        "email": "Ava@example.com"   
-    },
-    {
-        "user": "Ethan",
-        "email": "Ethan@example.com"   
-    },
-    {
-        "user": "Mia",
-        "email": "Mia@example.com"   
-    },
-    {
-        "user": "Noah",
-        "email": "Noah@example.com"   
-    },
-    {
-        "user": "Isabella",
-        "email": "Isabella@example.com"   
-    },
-    {
-        "user": "Liam",
-        "email": "Liam@example.com"   
-    },
-    {
-        "user": "Sophia",
-        "email": "Sophia@example.com"   
-    },
-    {
-        "user": "Aiden",
-        "email": "Aiden@example.com"   
-    },
-    {
-        "user": "Harper",
-        "email": "Harper@example.com"   
-    },
-    {
-        "user": "Lucas",
-        "email": "Lucas@example.com"   
-    },
-    {
-        "user": "Amelia",
-        "email": "Amelia@example.com"   
-    },
-    {
-        "user": "Evelyn",
-        "email": "Evelyn@example.com"   
-    },
-    {
-        "user": "Elijah",
-        "email": "Elijah@example.com"   
-    },
-    {
-        "user": "Abigail",
-        "email": "Abigail@example.com"   
-    },
-    {
-        "user": "Emily",
-        "email": "Emily@example.com"   
-    },
-    {
-        "user": "James",
-        "email": "James@example.com"   
-    },
-    {
-        "user": "Grace",
-        "email": "Grace@example.com"   
-    },
-    {
-        "user": "Samuel",
-        "email": "Sam@example.com"   
-    },
-    {
-        "user": "Chloe",
-        "email": "Chloe@example.com"   
-    },
-    {
-        "user": "Zoey",
-        "email": "Zoey@example.com"   
-    },
-    {
-        "user": "Daniel",
-        "email": "Daniel@example.com"   
-    },
-    {
-        "user": "Lily",
-        "email": "Lily@example.com"   
-    },
-];
 
+const names = [
+    "Oliver",
+    "Ava",
+    "Ethan",
+    "Mia",
+    "Noah",
+    "Isabella",
+    "Liam",
+    "Sophia",
+    "Aiden",
+    "Harper",
+    "Lucas",
+    "Amelia",
+    "Evelyn",
+    "Zoey",
+];
 
 
 const thoughts = [
@@ -127,22 +50,31 @@ const thoughts = [
     "Learning something new every day.",
   ];
   
-// Get Random item in array
-const getRandomArr = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// get random username
-const getRandomuser = () => 
-`${getRandomArr(names)}`;
+// Function to get a random item from an array
+const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// Get random thoughts
+// Function to get a random username
+const getRandomuser = () => {
+  const users = [];
+  for (const name of names) {
+    users.push({
+      user: name,
+      email: `${name.toLowerCase()}@example.com`,
+    });
+  }
+  return users;
+};
+
+// Function to get random thoughts
 const getRandomThoughts = () => {
-    const results = [];
-    for (let i = 0; i < 4; i++) {
-        results.push({
-            thoughtText: getRandomArr(thoughts)
-        });  
-    }
-    return results;
+  const results = [];
+  for (let i = 0; i < 4; i++) {
+    results.push({
+      thoughtText: getRandomArrItem(thoughts),
+    });
+  }
+  return results;
 };
 
 module.exports = { getRandomuser, getRandomThoughts };

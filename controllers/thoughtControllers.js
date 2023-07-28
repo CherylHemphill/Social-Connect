@@ -116,8 +116,30 @@ async addReaction(req, res) {
     } catch (err) {
       res.status(500).json(err);
     }
-  }
-
+  },
 
 // Delete reaction by reaction id
+async deleteReaction(req, res) {
+    try {
+        const { thoughtsId } = req.params;
+        const {reactionId} = req.body; 
+        const thought = await Thought.findOneAndUpdate(
+            { _id: req.params.thoughtsId },
+            { $pull: { reactions: {reactionId: req.body.reactionId }}},
+            { new: true }
+        )
+
+        if (!thought ) {
+          return res.status(404).json({
+            message: 'Thought or reaction not found',
+          });
+        }
+    
+        res.json({
+          message: 'Reaction removed successfully',
+          thought,
+        });
+} catch (err) {
+    res.status(500).json(err);
+}}
 }

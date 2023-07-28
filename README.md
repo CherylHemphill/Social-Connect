@@ -22,9 +22,15 @@ Open your terminal: <br>
 
 ## Usage
 User Routes:
-[![Video Demo](video_thumbnail.mp4)(./assests/User.mp4)]
+
+https://github.com/CherylHemphill/Social-Connect/assets/126039394/59a62f40-dbf6-4c72-ab7f-063f72e8f24c
+
 Thoughts Routes:
-[![Video Demo](video_thumbnail.mp4)(./assests/thoughts.mp4)]
+
+
+https://github.com/CherylHemphill/Social-Connect/assets/126039394/a6eedae8-fb3b-4584-aa5e-1db58b4e4264
+
+
 ## License
 
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license. Click the badge above for more details.
